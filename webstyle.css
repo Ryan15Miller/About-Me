@@ -1,0 +1,78 @@
+h1{
+	font-family: 'Allerta', Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	line-height: 55px;
+	text-shadow: 0 0 5px #CEEDF8;
+}
+h2 {
+	font-family: 'Allerta', Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	font-size: 32px;
+	line-height: 45px;
+	background-color: #3CA7D2
+}
+h3, h4, h6 {
+	font-family: 'Allerta', Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	background-color: #3CA7D2
+}
+body {
+	font-family: 'Crimson Text', Georgia, Times, serif;
+	font-size: 20px;
+	line-height: 25px;
+	color: #ffffff;
+	background-color: #3CA7D2;
+	background-image: url("brushed-alum.png");
+}
+p {
+	font-family: 'Crimson Text', Georgia, Times, serif;
+	font-size: 21px;
+	line-height: 25px;
+	color: #ffffff;
+	background-color: #52B1D5;
+	text-indent: 20px;
+}
+table, th, td {
+	border: 2px solid #82CEE9;
+	border-collapse: collapse;
+}
+th {
+	width: 500px;
+	width: 500px;
+	padding-top: 20px;
+	background-color: #CEEDF8
+}
+td {
+	text-align: Left;
+	background-color: #52B1D5;
+	vertical-align: top;
+	padding: 10px;
+}
+.thead{
+	font-family: 'Allerta', Helvetica, Arial, sans-serif;
+	color: #3289AC;
+	background-color: #CEEDF8;
+}
+#ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #338EB2;
+}
+
+#li {
+    float: left;
+}
+
+#lia {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#li a:hover:not(.active) {
+    background-color: #276D89;
+}
