@@ -268,3 +268,12 @@ button, input {
 button, html [type=button], [type=reset], [type=submit] {
     -webkit-appearance: button;
 }
+.hoveroutline:hover
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
