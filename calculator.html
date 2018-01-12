@@ -1,0 +1,98 @@
+<html>
+  <head>
+        <title>Calculator</title>
+		<style>
+			.bor {
+				border: 2px solid white;
+				border-radius: 8px;
+				padding: 9px 10px;
+				width: 100%;
+				margin: auto;
+				max-width: 700px;
+			}
+			.white{
+				color:white; 
+			}
+			.s {
+			font-family: Verdana, Helvetica, sans-serif;
+			}
+			.space{
+				white-space: nowrap;
+			}
+			.marginTop{
+				margin-top: 15px;
+			}
+			.button {
+				background-color: #008CBA; /* Green */
+				border: none;
+				color: white;
+				padding: 10px 10px;
+				text-align: center;
+				text-decoration: none;
+				display: border-box;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+				}
+			.button4 {background-color: #008CBA;}
+			input[type=text] {
+				width: 58px;
+				padding: 10px 5px;
+				margin: 8px 0;
+				box-sizing: border-box;
+				border: none;
+				background-color: #008CBA;
+				color: white;
+				font-size: 16px;
+			}
+		</style>
+        <script>
+			function addNumbers(){
+				var val1 = parseInt(document.getElementById("value1").value);
+				var val2 = parseInt(document.getElementById("value2").value);
+				var val3 = parseInt(document.getElementById("value3").value);
+				var ansD = document.getElementById("answer");
+				ansD.value = Math.round(((val3 - ((val1*.5)+(val2*.5))*(1-.2))/.2))+"%";
+			 
+			}
+			
+			function semesterGrade(){
+				var val1 = parseInt(document.getElementById("value01").value);
+				var val2 = parseInt(document.getElementById("value02").value);
+				var val3 = parseInt(document.getElementById("value03").value);
+				var ansD = document.getElementById("answer0");
+				ansD.value = (val1*.4)+(val2*.4)+(val3*.2)+"%";
+			 //Grade = Exam Worth × Exam Score + (100% − Exam Worth) × Current Grade
+			}
+        </script>
+  </head>
+  <body class="s white marginTop" style="background-color:#003554;">
+	<center>
+	<br />
+	<br />
+		<div class="bor">
+		<h3>Exam score needed for a grade</h3>
+        <span class="space">Q1 = <input type="text" id="value1" name="value1" value="95" /></span>
+        <span class="space">Q2 = <input type="text" id="value2" name="value2" value="89" /></span>
+        <span class="space">Final grade = <input type="text" id="value3" name="value3" value="93" 
+			style="width:35px"/></span>
+        <input class="button button4" type="button" name="Sumbit" value="Calculate" 
+			onclick="javascript:addNumbers()"/>
+       <span class="space"> Needed on exam = <input type="text" id="answer" name="answer" value="" /></span>
+		</div>
+		<br />
+		<br />
+		<br />
+		<div class="bor">
+		<h3>Semester Grade Calculator</h3>
+		<span class="space">Q1 = <input type="text" id="value01" name="value01" value="93" /></span>
+        <span class="space">Q2 = <input type="text" id="value02" name="value02" value="95" /></span>
+		<span class="space">Exam = <input type="text" id="value03" name="value03" value="85" 
+			style="width:35px"/></span>
+		<input class="button button4"type="button" name="Sumbit" value="Calculate" 
+			onclick="javascript:semesterGrade()"/>
+		<span class="space">Semester Grade = <input type="text" id="answer0" name="answer" value=""/></span>
+		</div>
+	</center>
+  </body>
+</html>
