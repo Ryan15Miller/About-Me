@@ -2,6 +2,29 @@
   <head>
         <title>Calculator</title>
 		<style>
+			#ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #008CBA;
+			}
+
+			#li {
+				float: left;
+			}
+
+			#lia {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			#li a:hover:not(.active) {
+				background-color: #276D89;
+			}
 			.bor {
 				border: 2px solid white;
 				border-radius: 8px;
@@ -65,6 +88,9 @@
 			 //Grade = Exam Worth × Exam Score + (100% − Exam Worth) × Current Grade
 			}
         </script>
+	<ul id="ul">
+		<li id="li"><a id="lia" href="index.html">Main Menu</a></li>
+	</ul>
   </head>
   <body class="s white marginTop" style="background-color:#003554;">
 	<center>
