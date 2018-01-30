@@ -100,3 +100,6 @@ function numberWithCommas(x) {
 	//Not My Code
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+function refresh(){
+	location.reload();
+}
